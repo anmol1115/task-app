@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(2, 74, 189);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    gap: 10px
+}
+
+.creater-container {
+    width: 90%;
+    padding: 5px;
+    background-color: yellow;
+    border: solid 1px black;
+}
+
+.creater-container span {
+    font-size: 25px;
+}
+
+.creater-input {
+    flex-direction: row;
+    gap: 4px;
+}
+
+.creater-input input {
+    width: 95%;
+    font-size: 18px;
+    border: solid 0.5px;
+    border-radius: 5px;
+}
+
+.creater-input input:focus {
+    outline: none;
+    border: solid 1px black;
+}
+
+.creater-input button {
+    width: 5%;
+    height: 28px;
+    background-color: white;
+    border: solid .5px;
+    border-radius: 12px;
+}
+
+.creater-input button:hover {
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.tasklist-wrapper {
+    flex-direction: row;
+    width: 90%;
+    gap: 5px;
+}
+
+.tasklist-container {
+    width: inherit;
+    border: solid 1px white;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(243, 40, 40, 0.662);
+    padding: 5px;
+    gap: 10px
+}
+
+.tasklist-container span {
+    background-color: yellow;
+    width: 95%;
+    padding: 5px;
+    font-size: larger;
+}
+
+.task-wrapper {
+    width: 95%;
+    height: inherit;
+    padding: 5px;
+}
+
+.task-container {
+    border: solid 1px white;
+    width: inherit;
+    background-color: rgb(2, 74, 189);
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.task-container:hover {
+    transform: scalex(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .tasklist-wrapper {
+        flex-direction: column;
+    }
+}
